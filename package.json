@@ -2,9 +2,11 @@
   "name": "e-commerce-app",
   "version": "1.0.0",
   "description": "MVC based e-commerce application",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/JoshuaLamke/e-commerce-app/issues"
   },
-  "homepage": "https://github.com/JoshuaLamke/e-commerce-app#readme"
+  "homepage": "https://github.com/JoshuaLamke/e-commerce-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
